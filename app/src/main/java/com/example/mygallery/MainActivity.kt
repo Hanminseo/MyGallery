@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                         arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), REQUEST_EXTERNAL_STORAGE)
             }else{
             getAllPhotos()
+            //주석을 추가해봄
         }
     }
 
