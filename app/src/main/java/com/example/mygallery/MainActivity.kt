@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 var dlg = AlertDialog.Builder(this)
                 dlg.setTitle("권한이 필요한 이유")
                 dlg.setMessage("사진 정보를 얻기 위해서는 외부 저장소 권한이 필수로 필요합니다.")
-                dlg.setPositiveButton("확인"){dialog, which ->  ActivityCompat.requestPermissions(this@MainActivity,
+                dlg.setPositiveButton("체크"){dialog, which ->  ActivityCompat.requestPermissions(this@MainActivity,
                         arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), REQUEST_EXTERNAL_STORAGE)}
 
                 dlg.setNegativeButton("취소", null)
